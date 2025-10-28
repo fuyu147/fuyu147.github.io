@@ -349,3 +349,20 @@ code span.wa {
 }
 
 /* Warning */
+
+.light-novel {
+    writing-mode: vertical-rl;
+    text-orientation: mixed;
+    font-family: "MS Mincho", "Hiragino Mincho ProN", serif;
+    height: 80vh;
+    margin: 5vh auto;
+    padding: 2em;
+    overflow-y: auto;
+    border: 1px solid #c4a7e7;
+    border-radius: 10px;
+}
+
+.light-novel ruby {
+    ruby-position: over;
+    font-size: 0.7em;
+}

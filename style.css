@@ -10,13 +10,13 @@
 
 .name {
     font-family: "The Suavity", sans-serif;
-    font-size: 2.6em;
-    color: #c4a7e7;
+    font-size: 3em;
+    color: #907aa9;
 }
 
 body {
-    background-color: #232136;
-    color: #e0def4;
+    background-color: #faf4ed;
+    color: #575279;
     line-height: 1.6;
     margin: 0;
     padding: 0;
@@ -38,19 +38,19 @@ body {
 
 h1 {
     text-align: center;
-    color: #c4a7e7;
+    color: #907aa9;
 }
 
 h2 {
-    color: #c4a7e7;
+    color: #907aa9;
     font-size: 1.5em;
-    border-bottom: 2px solid #31748f;
+    border-bottom: 2px solid #286983;
     padding-bottom: 5px;
 }
 
 h3 {
     font-size: 1.2em;
-    color: #c4a7e7;
+    color: #907aa9;
 }
 
 ul {
@@ -59,7 +59,7 @@ ul {
 }
 
 li {
-    background: #2a273f;
+    background: #fffaf3;
     margin-bottom: 10px;
     padding: 15px;
     border-radius: 5px;
@@ -68,11 +68,11 @@ li {
 
 a {
     text-decoration: none;
-    color: #ebbcba;
+    color: #d7827e;
 }
 
 a:hover {
-    color: #f6c177;
+    color: #ea9d34;
 }
 
 .goback {

@@ -3,13 +3,8 @@
     font-size: 18px;
 }
 
-.name {
-    font-family: "Noto Serif", "Noto Serif CJK JP", serif;
-    font-size: 3em;
-}
-
 body {
-    background-color: #FDFDFB;
+    background-color: #faf4ed;
     color: #575279;
     line-height: 1.6;
     margin: 0;
@@ -17,8 +12,13 @@ body {
     -ms-overflow-style: none;
 }
 
+.name {
+    font-size: 3em;
+    text-align: center;
+}
+
 .container {
-    max-width: 800px;
+    max-width: 1000px;
     margin: auto;
     overflow: auto;
     padding: 0 20px;
@@ -32,13 +32,13 @@ body {
 
 h1 {
     text-align: center;
-    color: #1c1a41;
+    color: #575279;
 }
 
 h2 {
-    color: #1c1a41;
+    color: #575279;
     font-size: 1.5em;
-    border-bottom: 2px solid #286983;
+    border-bottom: 2px solid #ea9d34;
     padding-bottom: 5px;
 }
 
@@ -62,18 +62,18 @@ li {
 
 a {
     text-decoration: none;
-    color: #646cff;
+    color: #575279;
 }
 
 a:hover {
-    color: #535bf2;
+    color: #907aa9;
 }
 
 .goback {
     display: inline-block;
     padding: 0.1em 0.4em;
-    background-color: #31748f;
-    color: #e0def4;
+    background-color: #575279;
+    color: #fffaf3;
     text-decoration: none;
     border-radius: 4px;
     font-size: 14px;
@@ -111,19 +111,19 @@ ruby {
 
 button {
     border-radius: 8px;
-    border: 1px solid #1a1a1a;
+    border: 1px solid #575279;
     font-size: 1em;
     font-weight: 500;
     font-family: inherit;
     background-color: transparent;
-    color: #d7827e;
+    color: #ea9d34;
     cursor: pointer;
     transition: border-color 0.25s;
 }
 
 
 button:hover {
-    border-color: #646cff;
+    border-color: #ea9d34;
 }
 
 button:focus,

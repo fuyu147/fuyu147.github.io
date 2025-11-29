@@ -1,12 +1,21 @@
-function copyToClipboard(text) {
-    navigator.clipboard.writeText(text).then(function() {
-        var discordText = document.getElementById('discord-text');
-        var originalText = discordText.innerText;
-        discordText.innerText = 'Copied!';
-        setTimeout(function() {
-            discordText.innerText = originalText;
-        }, 2000);
-    }, function(err) {
-        console.error('Could not copy text: ', err);
-    });
+async function loadTemplates() {
+    const res = await fetch("template.html");
+    const html = await res.text();
+
+    // Create a temporary document to extract templates
+    const tmp = document.createElement("div");
+    tmp.innerHTML = html;
+
+    // Move template elements into this document
+    for (const tmpl of tmp.querySelectorAll("template")) {
+        document.body.appendChild(tmpl);
+    }
 }
+
+loadTemplates().then(() => {
+    const container = document.getElementById("container");
+
+    // Use template
+    const card = document.getElementById("card").content.cloneNode(true);
+    container.appendChild(card);
+});

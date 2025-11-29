@@ -1,6 +1,13 @@
 * {
     font-family: "Noto Sans", "Noto Sans CJK JP", sans-serif;
-    font-size: 18px;
+    font-size: 20px;
+}
+
+@media (max-width: 600px) {
+    * {
+        font-size: initial;
+        /* or a specific value, e.g. 16px */
+    }
 }
 
 body {
@@ -27,6 +34,17 @@ body {
     overflow: auto;
     padding: 0 20px;
     text-align: justify;
+}
+
+@media (max-width: 600px) {
+    .container {
+        /* put only the properties you want to change */
+        max-width: 100%;
+        margin: 10px;
+        padding: 0 10px;
+        text-align: left;
+        /* or whatever behavior you want */
+    }
 }
 
 .long-citation {
@@ -62,7 +80,7 @@ li p {
 }
 
 a {
-    text-decoration:underline;
+    text-decoration: underline;
     color: #74c7ec;
 }
 
@@ -132,7 +150,21 @@ button:hover {
     border-color: #cba6f7;
 }
 
-button:focus,
-button:focus-visible {
-    outline: 4px auto -webkit-focus-ring-color;
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+    width: fit-content;
+}
+
+th,
+td {
+    border: 1px solid #45475a;
+    padding: 8px;
+    text-align: left;
+}
+
+th {
+    background-color: #313244;
+    color: #cdd6f4;
 }

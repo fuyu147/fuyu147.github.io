@@ -1,0 +1,5 @@
+{
+    "tasks": {
+        "live": "deno run -A --watch https://deno.land/std/http/file_server.ts ."
+    }
+}

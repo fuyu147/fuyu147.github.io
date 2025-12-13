@@ -1,5 +1,19 @@
+@font-face {
+    font-family: "Courier Prime Code";
+    src: url("fonts/Courier Prime Code.ttf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Zen Maru Gothic";
+    src: url("fonts/ZenMaruGothic-Regular.ttf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+}
+
 * {
-    font-family: "Noto Sans", "Noto Sans CJK JP", sans-serif;
+    font-family: "Zen Maru Gothic", "Courier Prime Code", "Noto Sans", "Noto Sans CJK JP", sans-serif;
     font-size: 22px;
 }
 

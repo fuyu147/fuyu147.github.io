@@ -1,0 +1,2 @@
+format:
+	bunx prettier . --write

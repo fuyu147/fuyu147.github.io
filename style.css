@@ -1,190 +1,199 @@
 @font-face {
-    font-family: "Courier Prime Code";
-    src: url("fonts/Courier Prime Code.ttf") format("truetype");
-    font-weight: normal;
-    font-style: normal;
+  font-family: "Courier Prime Code";
+  src: url("fonts/Courier Prime Code.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
 }
 
 @font-face {
-    font-family: "Zen Maru Gothic";
-    src: url("fonts/ZenMaruGothic-Regular.ttf") format("truetype");
-    font-weight: normal;
-    font-style: normal;
+  font-family: "Zen Maru Gothic";
+  src: url("fonts/ZenMaruGothic-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
 }
 
 * {
-    font-family: "Zen Maru Gothic", "Courier Prime Code", "Noto Sans", "Noto Sans CJK JP", sans-serif;
-    font-size: 22px;
+  font-family:
+    "Zen Maru Gothic", "Courier Prime Code", "Noto Sans", "Noto Sans CJK JP",
+    sans-serif;
+  font-size: 22px;
 }
 
 @media (max-width: 600px) {
-    * {
-        font-size: initial;
-        /* or a specific value, e.g. 16px */
-    }
+  * {
+    font-size: initial;
+    /* or a specific value, e.g. 16px */
+  }
 }
 
 body {
-    background-color: #1e1e2e;
-    color: #cdd6f4;
-    line-height: 1.6;
-    margin-left: 30px;
-    margin-bottom: 50px;
-    padding: 0;
-    -ms-overflow-style: none;
+  background-color: #1e1e2e;
+  color: #cdd6f4;
+  line-height: 1.6;
+  margin-left: 30px;
+  margin-bottom: 50px;
+  padding: 0;
+  -ms-overflow-style: none;
 }
 
 .card {
-    text-align: center;
-    width: fit-content;
+  text-align: center;
+  width: fit-content;
+  flex-shrink: 0;
+}
+
+.description-content {
+  text-align: horizon;
+  flex-shrink: 1;
+  min-width: 0;
+  word-break: break-word;
 }
 
 .name {
-    font-size: 3em;
+  font-size: 3em;
 }
 
 p {
-    max-width: 1000px;
-    text-align: justify;
+  max-width: 1000px;
+  text-align: justify;
 }
 
 .container {
-    max-width: 1000px;
-    margin: auto;
-    overflow: auto;
-    padding: 0 20px;
-    text-align: justify;
+  max-width: 1000px;
+  margin: auto;
+  overflow: auto;
+  padding: 0 20px;
+  text-align: justify;
 }
 
 @media (max-width: 600px) {
-    .container {
-        /* put only the properties you want to change */
-        max-width: 100%;
-        margin: 10px;
-        padding: 0 10px;
-        text-align: left;
-        /* or whatever behavior you want */
-    }
+  .container {
+    /* put only the properties you want to change */
+    max-width: 100%;
+    margin: 10px;
+    padding: 0 10px;
+    text-align: left;
+    /* or whatever behavior you want */
+  }
 }
 
 .long-citation {
-    max-width: 80%;
-    text-align: justify;
-    margin: auto;
+  max-width: 80%;
+  text-align: justify;
+  margin: auto;
 }
 
 h1 {
-    color: #cba6f7;
-    font-size: 1.5em;
-    border-left: 2px solid #fab387;
-    padding-left: 10px;
+  color: #cba6f7;
+  font-size: 1.5em;
+  border-left: 2px solid #fab387;
+  padding-left: 10px;
 }
 
 h2 {
-    color: #f5c2e7;
-    font-size: 1.3em;
+  color: #f5c2e7;
+  font-size: 1.3em;
 }
 
 h3 {
-    font-size: 1.2em;
-    color: #b4befe;
+  font-size: 1.2em;
+  color: #b4befe;
 }
 
 ul {
-    list-style: square;
-    padding-left: 30px;
+  list-style: square;
+  padding-left: 30px;
 }
 
 li p {
-    padding-left: 30px;
+  padding-left: 30px;
 }
 
 a {
-    text-decoration: underline;
-    color: #74c7ec;
+  text-decoration: underline;
+  color: #74c7ec;
 }
 
 a:hover {
-    color: #89dceb;
+  color: #89dceb;
 }
 
 .goback {
-    display: inline-block;
-    padding: 0.1em 0.4em;
-    background-color: #45475a;
-    color: #cdd6f4;
-    text-decoration: none;
-    border-radius: 4px;
-    font-size: 14px;
-    font-weight: 500;
-    text-align: center;
-    cursor: pointer;
-    transition: background-color;
+  display: inline-block;
+  padding: 0.1em 0.4em;
+  background-color: #45475a;
+  color: #cdd6f4;
+  text-decoration: none;
+  border-radius: 4px;
+  font-size: 14px;
+  font-weight: 500;
+  text-align: center;
+  cursor: pointer;
+  transition: background-color;
 }
 
 .container ol {
-    text-align: justify;
+  text-align: justify;
 }
 
 ::-webkit-scrollbar {
-    display: none;
+  display: none;
 }
 
 html {
-    scrollbar-width: none;
+  scrollbar-width: none;
 }
 
 html {
-    -webkit-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
 }
 
 .raito {
-    font-size: 1.3em;
-    white-space: pre-line;
-    word-wrap: break-word;
+  font-size: 1.3em;
+  white-space: pre-line;
+  word-wrap: break-word;
 }
 
 pre {
-    white-space: pre-line;
-    word-wrap: break-word;
+  white-space: pre-line;
+  word-wrap: break-word;
 }
 
 ruby {
-    font-size: 1.4em;
+  font-size: 1.4em;
 }
 
 button {
-    border-radius: 8px;
-    border: 1px solid #9399b2;
-    font-size: 1em;
-    font-weight: 500;
-    font-family: inherit;
-    background-color: transparent;
-    color: #fab387;
-    cursor: pointer;
-    transition: border-color 0.25s;
+  border-radius: 8px;
+  border: 1px solid #9399b2;
+  font-size: 1em;
+  font-weight: 500;
+  font-family: inherit;
+  background-color: transparent;
+  color: #fab387;
+  cursor: pointer;
+  transition: border-color 0.25s;
 }
 
-
 button:hover {
-    border-color: #cba6f7;
+  border-color: #cba6f7;
 }
 
 table {
-    width: 100%;
-    border-collapse: collapse;
-    margin: 20px 0;
-    width: fit-content;
+  width: 100%;
+  border-collapse: collapse;
+  margin: 20px 0;
+  width: fit-content;
 }
 
 th,
 td {
-    border: 1px solid #45475a;
-    padding: 8px;
-    text-align: left;
+  border: 1px solid #45475a;
+  padding: 8px;
+  text-align: left;
 }
 
 th {
-    background-color: #313244;
-    color: #cdd6f4;
+  background-color: #313244;
+  color: #cdd6f4;
 }

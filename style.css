@@ -40,6 +40,7 @@ body {
   text-align: center;
   width: fit-content;
   flex-shrink: 0;
+  padding-right: 30px;
 }
 
 .description-content {
